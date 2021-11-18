@@ -66,7 +66,7 @@ def move(event):
         sense.set_pixel(x, y, (0, 255, 0))
         
         if maze1_paths[y][x] == 2:
-            print("you win!")
+            sense.show_message("YOU WIN!")
             y = 0
             x = 2
             sense.set_pixels(maze1_pixels)
