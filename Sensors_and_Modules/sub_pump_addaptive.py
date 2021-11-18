@@ -14,13 +14,18 @@ class SubPump:
         self.threshold = threshold
         self.last_checked = time.time()
         self.last_value = self.sensor.read(0)
+        self.floor = self.last_value
     
     def poll(self):
         water = self.sensor.read(0)
-        print("difference: ", water - self.last_value)
+        print("difference: ", water)
         if  1/abs(self.last_checked - time.time()) * water - self.last_value > self.threshold:
+            if not self.pump.status:
+                self.floor = self.last_value
+                print(self.floor)
             self.pump.on()
-        elif water < self.threshold:
+        elif water <= self.floor:
+            print(self.floor)
             self.pump.off()
         self.last_value = water
         self.last_checked = time.time()
@@ -30,5 +35,5 @@ if __name__ == "__main__":
     
     while True:
         test.poll()
-        print(test.sensor.read(0))
+        
         time.sleep(1)
