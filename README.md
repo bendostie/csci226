@@ -1,2 +1,2 @@
 # CSCI226
-Course work for CSCI 250 at Houghton College for Benjamin Dostie
+Course work for CSCI 250, Computer Archetecture, at Houghton College for Benjamin Dostie
