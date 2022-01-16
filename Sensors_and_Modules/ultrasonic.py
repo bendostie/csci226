@@ -1,3 +1,4 @@
+#measure distance with ultrasonic sensor on RPi
 import RPi.GPIO as GPIO
 import time
 
