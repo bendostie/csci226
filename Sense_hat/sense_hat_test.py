@@ -1,3 +1,4 @@
+"""sense hat examples from rpi sense hat"""
 from sense_hat import SenseHat
 import time
 sense = SenseHat()

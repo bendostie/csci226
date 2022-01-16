@@ -1,3 +1,6 @@
+"""Sets off alarm if RPi is moved. Needs RPi sense hat
+    """
+
 from sense_hat import SenseHat
 import time
 import math

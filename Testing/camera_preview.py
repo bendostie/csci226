@@ -1,3 +1,7 @@
+"""
+    test RPi camera module with picamera
+"""
+
 from picamera import PiCamera
 from time import sleep
 

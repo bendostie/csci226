@@ -1,3 +1,7 @@
+"""
+Rough draft of morse code translator and writer for RPi. Connect a button and LED to input and output morse code from the RPi
+Benjamin Dostie 2021
+"""
 import time
 import RPi.GPIO as GPIO
 

@@ -1,3 +1,4 @@
+"""attempts to keep dot in same place using accelerometer and gyro of RPi sense hat"""
 from sense_hat import SenseHat
 import time
 import math

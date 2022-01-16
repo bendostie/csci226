@@ -1,3 +1,5 @@
+"""test LED and button setup connected to RPi
+"""
 import time
 import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BCM)

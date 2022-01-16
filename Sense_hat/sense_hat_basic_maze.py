@@ -1,3 +1,5 @@
+"""Joystick controlled maze game for RPi with sense hat"""
+
 from sense_hat import SenseHat
 import time
 import math
